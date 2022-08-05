@@ -1,0 +1,1 @@
+This is my personal portfolio in making and will soon be created. I love programming and now I am exploring development area.
