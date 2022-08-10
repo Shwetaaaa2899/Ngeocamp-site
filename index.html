@@ -4,119 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel = "stylesheet" >
-        <title>Document</title>
+    <link href="style.css" rel = "stylesheet" />
+    <title>Home</title>
 </head>
-
 <body>
-    <h2>@nav</h2>
     <nav class = 'navigation container'>
-    <div class = 'nav-brand'>IamBrand</div>
- 
-        
-        <ul class = 'list-non-bullet nav-pills'>
+        <div class = 'nav-brand'>IamBrand</div>
+     
             
-            <li  class = 'list-item-inline'>
-               <a class = 'link link-active'>Home</a> 
-            </li>
-            <li class = 'list-item-inline'>
-                <a class = 'link'>Projects
-                </li></a>  
-            <li class = 'list-item-inline'>
-                <a class = 'link'>  Blogs</a> 
-              
-            </li>
-           
-        </ul>
-    </nav>
-
-  <hr >
-  <h2>@header</h2>
- <header>
-    <h2>Also called as hero</h2>
-    <img src = 'image/pic.svg' />
-</header>
-    
-    <hr >
-    <h2>@container</h2>
-    <h3>fluid container</h3> 
-    <div class = 'container container-fluid'></div> 
-
-    <h3>Center  container</h3>
-    <div class = 'container container-center'>container</div>
-    <hr>
-    
-    <h2>@links</h2>
-    <a class = 'link primary-link' href = "#">Primary Link</a>
-    <a class = 'link secondary-link' href = "#">Primary Link</a>
-   <hr>
-    <h1>Hello</h1>
-    <h2>Excited for this journey where it leads.</h2>
-    I have worked on few CLI apps and will showcase it sooon.
-    Well , I dont have any of the hobbies , just not so creative person on this earth.Prefer watching kdramas in free time.
-<h3>@unordered inline list with no bullets</h3>
-<ul  class = 'list-non-bullet'>
-    <li>
-        I am a developer.
-    </li>
-    <li >
-        Home
-    </li>
-    <li>
-        Projects
-    </li>
-    <li>
-        Blogs
-    </li>
-   
-</ul>
-<br>
-<h3>unordered inline list</h3>
-<ul  class = 'list-non-bullet'>
-    <li class = 'list-item-inline'>
-        I am a developer.
-    </li>
-    <li class = 'list-item-inline'>
-        Home
-    </li>
-    <li class = 'list-item-inline'>
-        Projects
-    </li>
-    <li class = 'list-item-inline'>
-        Blogs
-    </li>
-   
-</ul>
-<br>
-<h3>Reversed ordered list</h3>
-
-<ol reversed>
-    <li>a</li>
-    <li>b</li>
-    <li>c</li>
-</ol>
-<hr >
-<h2>@section</h2>
-<h3>white section</h3>
-<section>
-<p>will go from left to right and will expand</p>
-</section>
-<h2>@section</h2>
-<h3>off white  section</h3>
-<section>
-<p>grey color </p>
-</section>
-<hr>
-<footer>
-    <div>
-        Some small heading n dont use h1, h2 tag here.
+            <ul class = 'list-non-bullet nav-pills'>
+                
+                <li  class = 'list-item-inline'>
+                   <a href = "/" class = 'link link-active'>Home</a> 
+                </li>
+                <li class = 'list-item-inline'>
+                    <a  href = 'projects.html' class = 'link'>Projects
+                    </li></a>  
+                <li class = 'list-item-inline'>
+                    <a href = 'blogs.html' class = 'link'> Blogs</a> 
+                  
+                </li>
+               
+            </ul>
+        </nav>
+        <header class = 'hero'>
+ 
+            <img class = 'hero-img' src = '../image/pic.svg' />
+            <h2 class ='hero-heading' style = "color: var(--secondary-color);">Shweta   the <span style = "color:var(--primary-color);">WEB DEVELOPER</span></h2>
+        </header>
+      <section class = 'section ow'>
+        <div class = 'container container-center'>
+        <h1>Technologies</h1>
+        <p>I am familiar with HTML, CSS , Git , Javacript, Node.Js, React.Js , Python, Intermediate problem solving ability and web Hosting.</p>
     </div>
-    <ul>
+    </section>   
+    <section class = 'section'>
+        <div class = 'container container-center'>
+        <h1>Projects</h1>
+    <p>I like to showcase my work and thus, you can see my projects hosted online.</p>
+  
+    <a class = 'link primary-link' href = "./projects.html" >View Projects</a>
+</div></section>
+ <section class = 'section ow'>
+        <div class = 'container container-center'>
+        <h1>Blogs</h1>
+        <p>I am familiar with HTML, CSS , Git , Javacript, Node.Js, React.Js , Python, Intermediate problem solving ability and web Hosting.</p>
+        <!-- <a class = 'link primary-link' href = "#">Read Bolgs</a> -->
+        <a class = 'link secondary-link' href = "./blogs.html">Read Bolgs</a>
+    </div>
+    </section>   
 
-    <li>Socialone</li>
-    <li>Socialtwo</li>
-    <li>Socialthree</li>
-</ul>
-</footer>
+    <footer class = 'footer'>
+        <div class = 'footer-header'>
+         Let's Connect.
+        </div>
+        <ul class = 'social-links list-non-bullet'>
+    
+        <li class = 'list-item-inline'><a class = 'link' href = "/">mail</a></li>
+        <li class = 'list-item-inline'><a class = 'link' href = "/">github</a></li>
+        <li class = 'list-item-inline'><a class = 'link' href = "/">linkedIn</a></li>
+    </ul>
+    </footer>
+ 
 </body>
 </html>
