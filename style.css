@@ -161,3 +161,9 @@ border-top-right-radius: 1rem;
 .footer ul{
 padding-inline-start : 0px;
 }
+
+
+/**div **/
+.container .radius{
+    padding: 2rem 10rem;border-radius: 25px;
+}
