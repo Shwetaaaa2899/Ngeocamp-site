@@ -29,12 +29,94 @@
         <header class = 'hero'>
  
             <img class = 'hero-img' src = '../image/img1.png' />
-            <h2 class ='hero-heading' style = "color: var(--secondary-color);">Why Python  is <span style = "color:var(--primary-color);">perfect for beginners</span></h2>
+            <h2 class ='hero-heading' style = "color: var(--secondary-color);">Things I learnt in  <span style = "color:var(--primary-color);">Chapter 5 of Neog</span></h2>
         </header>
         <div class = 'container container-center '>
-        If you are not familiar, Python is a high-level programming language, and the syntax is easy to understand and read. In fact, Python reads a lot like English!
-        Also, Python Crash Course helps you build your first projects for your developer portfolio. Thus, you will practice your problem-solving skills as you learn how to think like a programmer.
-        Python is highly versatile. You can use it for both small and complex tasks, and it is used across many different industries from its more common applications in data science and software engineering to environments like mobile app development, artificial intelligence, and machine learning.
+            <ol>
+                <li>Everything inside return body of App.js is HTML knows as JSX.</li>
+                <li>In order to write values of Javascript , we need to male use pf curly braces.</li>
+           For Eg:- Below is App.Js file.<br>
+                    <span>Code</span>
+                    <br>
+                    var user = "Shweta";
+                    <br>
+                    
+export default function App() {<br>
+    return(
+        Hello {user} )<br>
+    
+}
+           
+                <li>For printing each item of an array :-<br>
+                Inplace of <span>for loop</span>, we can use <span>map</span></li>
+                For Eg:- Below is App.Js file.<br>
+                <span>Code</span>
+                <br>
+                var iamArray = ['apple','mango','guava','watermelon']
+                <br><br>
+                
+export default function App() {<br>
+return(
+    iamArray.map(item =>{<br>
+       return item<br>
+    }<br>)
+)<br>
+
+}
+<li>Here Exmple 3's code is printed , but by using (ul - unordered list)</li>
+        
+<br>COde:-<br>
+                
+export default function App() {<br>
+    <ol>
+    return(<br>
+        {<br>
+         <li>   Code inside this curly braces only<br>}</li>
+        
+        <li>{
+            Arrayname.map(function of your choice)<br>
+        }</li>
+       <li>Example :- iamArray.map(item =>{<br>
+           return item<br>
+        }</li> 
+        <li>Let's put it all together
+            For Eg:- Below is App.Js file.<br>
+            <span>Code:- </span>
+            <br>
+            var iamArray = ['apple','mango','guava','watermelon'];
+            <br><br>
+            
+export default function App() {<br>
+return(<br>
+iamArray.map(item =>{<br>
+   return item<br>
+}<br>)
+)<br>
+}
+</li>
+<li> Code:-<br>
+               
+export default function App() {
+    return(
+        <br>
+        (ul)<br>
+        {<br>
+            arrname.amap(item =>{<br>
+                (li)<br>--here now again it has converted to HTML, sp to use JS use a curly braces again<br>(/li)<br>
+           
+           (li)<br>{<br>
+                    {item}
+           } <br>(/li)<br>})
+
+        }
+        <br>
+        (ul)<br>
+    )
+}
+</li>
+    </ol>
+}
+</ol>
         <br>
   
   <br>
