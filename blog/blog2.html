@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../style.css" rel = "stylesheet" />
+    <link  rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+
+
     <title>Blog1</title>
 </head>
 <body>
@@ -13,25 +18,26 @@
      
             <ul class = 'list-non-bullet nav-pills'>
                 
+                
                 <li  class = 'list-item-inline'>
-                   <a href = "/" class = 'link '>Home</a> 
-                </li>
-                <li class = 'list-item-inline'>
-                    <a  href = 'projects.html' class = 'link link-active'>Projects
-                    </li></a>  
-                <li class = 'list-item-inline'>
-                    <a href = 'blogs.html ' class = 'link'> Blogs</a> 
-                  
-                </li>
-               
+                    <a href = "../index.html" class = 'link '>Home</a> 
+                 </li>
+                 <li class = 'list-item-inline'>
+                     <a  href = '../projects.html' class = 'link link-active'>Projects
+                     </li></a>  
+                 <li class = 'list-item-inline'>
+                     <a href = '../blogs.html ' class = 'link'> Blogs</a> 
+                   
+                 </li>
+                <!-- https://www.youtube.com/watch?v=pBFSbV2KE_0 -->
             </ul>
         </nav>
         <header class = 'hero'>
  
-            <img class = 'hero-img' src = '../image/img1.png' />
-            <h2 class ='hero-heading' style = "color: var(--secondary-color);">Things I learnt in  <span style = "color:var(--primary-color);">Chapter 5 of Neog</span></h2>
+            <img class = 'hero-img' src = '../image/notes.jpg'>
+            <h2 class ='hero-heading' style = "color: var(--secondary-color);">Things I learnt   <span style = "color:var(--primary-color);">as Qucick Notes from Neog</span></h2>
         </header>
-        <div class = 'container container-center '>
+        <div class = 'container container-center' >
             <ol>
                 <li>Everything inside return body of App.js is HTML knows as JSX.</li>
                 <li>In order to write values of Javascript , we need to male use pf curly braces.</li>
@@ -114,32 +120,60 @@ export default function App() {
     )
 }
 </li>
+</ol>
+<li>To fetch the element like input tags, buttons etc, we can make use of vanilla.js. Eg:-<br>
+<br>
+In .html file - Code is:-<br><br>
+ ----
+(body)<br>
+( input id = 'inp'  type = "text")<br>
+( button id = 'button')Button(/button)
+<br>
+(/body)-------<br><br>
+Now In .jS file:-<br><br>
+Step1: const (varaible-bame) = document.querySelector('.classname'/'#idname')<br><br>
+Step2: to makeaction on button while we click it:-<br>
+(buttonNameVariable).addEventListener('click', (ourfunctionname));<br>
+Step 3:Never fprget to add ";" in Js.file<br><br>
+step 4: Put it all tpgether:-<br><br>
+const inPut = document.querySelector('#inp');<br>
+const button = document.querySelector('button'); <br>
+//here i have defined the function to conole the input data//<br>
+funtion myFunction{<br>
+console.log(inPut);<br>
+}<br>
+button.addEvenetListener('click',myFunction);<br><br>
+Step 5: We will be able to see the respective input in the console section of the browser.<br>
+</body></li>
     </ol>
 }
 </ol>
-        <br>
-  
-  <br>
-  When you’re learning a new programming language — particularly after you’ve completed your bootcamp course or degree — you’ll want to feel confident that you have a community of programmers you can turn to with questions when an issue comes up. One major benefit of Python is its robust and supportive online community, as evidenced by the 1.5 Million GitHub repositories that make Python the platform’s second-largest community. 
- <br>
-<br>
-
+     
 <header class = 'hero'>
-<h1> <span style = "color:var(--primary-color);">Where can I use Python???</span></h1>
+<h1> <span style = "color:var(--primary-color);">Bonus 💯</span></h1>
 
 </header>
-<ul>
+<ol>
     <li>
-        Web Development
+       document.querySelectorAll  - is used to select various tags having same classname.
+       <br><br>
+       Note: We cant use it for same id, since "id's are unizue within themselves".<br>
     </li>
     <li>
-        Data Science
+    Callback function : the function calling another  function inside it's body.<br>
+    Eg:-<br><br>
+    function B(){<br>
+        //body<br>
+    }<br>
+    function A(){<br>
+        B();<br>
+    }
+    </br>
     </li>
     <li>
-        App Development
+      Margin - auto :- In css, it is simple and sorted thing to bring things in center of div.
     </li>
-</ul>
-And as we say Python is fun, expressive, its readable style, quick editing, run development cycle meaning you can sit down writing code, rather than fighting compilers and complex syntax. Python will grow with you as your experiments become prototypes, your prototypes become products.
+</ol>
 
 </div>
 
@@ -150,11 +184,19 @@ And as we say Python is fun, expressive, its readable style, quick editing, run 
          Let's Connect.
         </div>
         <ul class = 'social-links list-non-bullet'>
+            
+            <li class = 'list-item-inline'><a class = 'link' href = "https://linkedin.com/in/shweta-jha-8094721b2">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+ 
     
-        <li class = 'list-item-inline'><a class = 'link' href = "/">mail</a></li>
-        <li class = 'list-item-inline'><a class = 'link' href = "https://github.com/Shwetaaaa2899">github</a></li>
-        <li class = 'list-item-inline'><a class = 'link' href = "https://linkedin.com/in/shweta-jha-8094721b2">linkedIn</a></li>
-    </ul>
-    </footer>
+            <li class = 'list-item-inline'><a class = 'link' href = "https://linkedin.com/in/shweta-jha-8094721b2">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+ 
+
+        <li class = 'list-item-inline'><a class = 'link' href = "https://github.com/Shwetaaaa2899">
+            <i class="fa-brands fa-twitter"></i></a></li>
+        </a></li>
 </body>
 </html>

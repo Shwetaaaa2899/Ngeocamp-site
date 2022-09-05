@@ -96,6 +96,7 @@ hr {
 
 .navigation .nav-brand{
     font-weight:bold;
+    
     /* font-size: 1.1rem; */
     /* padding: 1rem 0rem; */
     /* font-size : 25px; */
@@ -105,9 +106,11 @@ hr {
 .navigation .link-active{
     font-weight: bold;
     color : var(--secondary-color);
+
 }
 .navigation li{
     display: inline-block;
+   
     /* padding: 0rem 0.8rem; */
    }
 /**header**/
